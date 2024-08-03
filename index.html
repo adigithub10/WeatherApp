@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>WEATHER APP</h1>
+      <div class="tab_container">
+        <p class="tab" id="userweather">Your Weather</p>
+        <p class="tab" id="searchweather">Search Weather</p>
+      </div>
+      <div class="weather_container">
+        <!-- grant location -->
+        <div class="grant_location_container" id="sub">
+          <img
+            src="./images/pngtree-red-location-icon-sign-png-image_7886920-removebg-preview.png"
+            width="120"
+            height="120"
+            loading="l"
+          />
+          <p style="font-size: 25px; line-height: 40px;">Grant Location Access</p>
+          <p style="line-height: 40px;">Allow access to get weather Information.</p>
+          <button class="btn" id="grant_btn" >Grant Access</button>
+        </div>
+        <!-- search form -->
+        <form action="" class="form_container" id="searchForm">
+          <input
+            type="text"
+            placeholder="Search for city..."
+            id="searchinput"
+          />
+          <button class="btn" type="submit">
+            <img src="./images/glasses.png" alt="" id="glasses">
+          </button>
+        </form>
+        <!-- loading screen -->
+        <div class="loading_cont">
+          <img src="./images/1496.gif" alt="" />
+          <p>Loading</p>
+        </div>
+        <!-- weather info -->
+        <div class="user_info_cont">
+          <div class="name">
+            <p class="city_Name" id="abt"></p>
+            <img src="" class="countryicon" id="abt" />
+          </div>
+          <p class="weather_info" id="abt"></p>
+          <img class="weather_icon" id="abt" />
+          <p class="temp" id="abt"></p>
+          <!-- parameters -->
+          <div class="para_cont">
+            <!-- card1 -->
+            <div class="para">
+              <img
+                src="./images/99f34281fa02987442e91d318137c98d-removebg-preview.png"
+                alt=""
+              />
+              <p class="speed">windspeed</p>
+              <p class="data_windspeed"></p>
+            </div>
+            <!-- card2 -->
+            <div class="para">
+              <img src="./images/images-removebg-preview.png" alt="" />
+              <p class="humidity">Humidity</p>
+              <p class="data_humidity"></p>
+            </div>
+            <!-- card3 -->
+             <div class="para">
+                <img src="./images/84555-removebg-preview.png" alt="">
+                <p class="clouds">Clouds</p>
+                <p class="data_clouds"></p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script tag added -->
+    <script src="get.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b77f93820c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

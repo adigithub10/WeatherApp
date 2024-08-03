@@ -1,0 +1,224 @@
+/* Universal styles */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+  }
+  
+  /* Variables for color themes */
+  :root {
+    --colorDark1: #112D4E;
+    --colorDark2: #3F72AF;
+    --colorLight1: #DBE2EF;
+    --colorLight2: #F9F7F7;
+  }
+  
+  /* General layout and styling */
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    color: var(--colorLight2);
+    background-image: linear-gradient(160deg, #000913 0%, #264f80 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+  }
+  
+  /* Tabs styling */
+  .tab_container {
+    width: 90%;
+    max-width: 550px;
+    margin: 4rem auto 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tab {
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+  }
+  
+  .tab.current_tab {
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+  }
+  
+  /* Form styling */
+  .form_container {
+    display: none;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+  }
+  
+  .form_container.active {
+    display: flex;
+  }
+  
+  .form_container input {
+    all: unset;
+    width: calc(100% - 80px);
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 10px;
+  }
+  
+  .form_container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .form_container input:focus {
+    outline: 3px solid rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Button styling */
+  .btn {
+    all: unset;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--colorDark2);
+    cursor: pointer;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+  }
+  
+  /* Grant location container styling */
+  .grant_location_container {
+    display: none;
+  }
+  
+  .grant_location_container.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .grant_location_container img {
+    margin-bottom: 2rem;
+  }
+  
+  .grant_location_container p:first-of-type {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .grant_location_container p:last-of-type {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.75px;
+  }
+  
+  /* Loading screen styling */
+  .loading_cont {
+    display: none;
+  }
+  
+  .loading_cont.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading_cont p {
+    text-transform: uppercase;
+  }
+  
+  /* User info container styling */
+  .user_info_con {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .user_info_con.active {
+    display: flex;
+  }
+  
+  .user_info_con p {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+  
+  .user_info_con img {
+    width: 90px;
+    height: 90px;
+  }
+  
+  /* User info name styling */
+  .name {
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .name p {
+    font-size: 2rem;
+  }
+  
+  .name img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  /* Paragraph container styling */
+  .para_cont {
+    width: 90%;
+    display: flex;
+    gap: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .para {
+    width: 30%;
+    max-width: 200px;
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+    align-items: center;
+  }
+  
+  .para img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .para p:first-of-type {
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .para p:last-of-type {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  
